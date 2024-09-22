@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API do Twilio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .credits {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .message {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e0ffe0;
+            border: 1px solid #d0ffd0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>API de Envio de Mensagens do Twilio está funcionando!</h1>
+        <img src="https://cdn.discordapp.com/attachments/1262112679737294950/1280729276383236199/image.png?ex=66e6fb56&is=66e5a9d6&hm=50df9c3492e52f56a14ef7ea3a0bcc6625c9e3fc67c13688cfb17e42d0634c58&" alt="img">
+        <div class="credits">
+            <p>Desenvolvido por <strong>Andrey Cavalcante</strong></p>
+        </div>
+        {% if message_body %}
+        <div class="message">
+            <p><strong>Mensagem Enviada:</strong> {{ message_body }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
